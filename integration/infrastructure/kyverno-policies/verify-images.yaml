@@ -12,7 +12,8 @@ spec:
     name: verify-notary-signature
     verifyImages:
     - imageReferences:
-      - ghcr.io/kubeconchina2023/test-verify-image*
+      # - ghcr.io/kubeconchina2023/test-verify-image*
+      - ghcr.io/kubeconchina2023/test-verify-image:v1
       type: Notary
       attestors:
       - count: 1
