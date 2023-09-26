@@ -9,7 +9,7 @@ spec:
     kind: OCIRepository
     name: kyverno-controller
   serviceAccountName: kustomize-controller
-  path: ./
+  path: ./integration
   prune: true
   wait: true
   timeout: 5m
