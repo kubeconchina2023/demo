@@ -10,6 +10,6 @@ spec:
   serviceAccountName: kustomize-controller
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: demo
   path: ./integration/apps
   prune: true
