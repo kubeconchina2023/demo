@@ -12,34 +12,39 @@ spec:
     name: verify-notary-signature
     verifyImages:
     - imageReferences:
-      # - ghcr.io/kubeconchina2023/test-verify-image*
-      - ghcr.io/kubeconchina2023/test-verify-image:v1
+      - ghcr.io/kubeconchina2023/test-verify-image*
+      # - ghcr.io/kubeconchina2023/test-verify-image:v1
       type: Notary
       attestors:
       - count: 1
         entries:
         - certificates:
             cert: |-
-              -----BEGIN CERTIFICATE-----
-              MIIDWTCCAkGgAwIBAgICALswDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCVVMx
-              CzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZOb3Rhcnkx
-              HDAaBgNVBAMTE2t1YmVjb25jaGluYTIwMjMuaW8wHhcNMjMwOTIxMDg0NzEyWhcN
-              MjMwOTIyMDg0NzEyWjBbMQswCQYDVQQGEwJVUzELMAkGA1UECBMCV0ExEDAOBgNV
-              BAcTB1NlYXR0bGUxDzANBgNVBAoTBk5vdGFyeTEcMBoGA1UEAxMTa3ViZWNvbmNo
-              aW5hMjAyMy5pbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKYDxplf
-              P4P+9AU0MaciXPW05jTRTAcIyUIuziarbKuJS7Y3ytcxTxwAgC9Zq8IWqp6pRR5e
-              HDkr6yhcuJYu1XWxPXS8vEWrqCPn27Fti8abfuQ1zgAlxTcEbJv9enfIRrw4FRY+
-              +PX3ZlY29/XuuNrlxQ4Gi23+zChDtaqxOCcZTjGLiH7IpJ4jsFNS0M4XOxjmX/vN
-              eSSmTMLIFT4+cgkPCz+N3JupVLADIczsw7lXdsKB2yU4OfRlnIPQEeDO2OKlO78H
-              6FaLuvDZ67CJRN1yqzXjSgfuPyheiB3bpZbRTRdETZdWPRpaDBq+I34PPBGrWyq8
-              6T4MhOD+6gykhYkCAwEAAaMnMCUwDgYDVR0PAQH/BAQDAgeAMBMGA1UdJQQMMAoG
-              CCsGAQUFBwMDMA0GCSqGSIb3DQEBCwUAA4IBAQCkSt4HcfvhxMgoRqw1s5rbM6c7
-              ZrFp8mjK84o+7MbyFgTv7xr2mBjgq5Fv5C/+JsSWYsf5kA8A2ovZuCp4U9VJ+rwK
-              6A2W86CTXwGHGmcggvaJHiS9l2GdZcqDFwFkduOL+9ZUBcDMWrKMJ4TB0S3Q71y7
-              fORqYPlw/VFsk50oaiqHD29DPGixyqsYqvxSZO2S38cVvvvCnczhNIlC6wcY0wB3
-              6uEu5iOL1NbVz/5X7UmlusP2dhXRiWsPad7mF8x1tTaqilqn/H+/m2JtdY92hBCt
-              scBWy9+ibz9T2VjkxO/n70pjrZEzBDvltsvQPDamEG8Uryl7HE4ufCEZuF/K
-              -----END CERTIFICATE-----
+              -----BEGIN PUBLIC KEY-----
+              MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8nXRh950IZbRj8Ra/N9sbqOPZrfM
+              5/KAQN0/KjHcorm/J5yctVd7iEcnessRQjU917hmKO6JWVGHpDguIyakZA==
+              -----END PUBLIC KEY-----
+            # cert: |-
+            #   -----BEGIN CERTIFICATE-----
+            #   MIIDWTCCAkGgAwIBAgICALswDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCVVMx
+            #   CzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZOb3Rhcnkx
+            #   HDAaBgNVBAMTE2t1YmVjb25jaGluYTIwMjMuaW8wHhcNMjMwOTIxMDg0NzEyWhcN
+            #   MjMwOTIyMDg0NzEyWjBbMQswCQYDVQQGEwJVUzELMAkGA1UECBMCV0ExEDAOBgNV
+            #   BAcTB1NlYXR0bGUxDzANBgNVBAoTBk5vdGFyeTEcMBoGA1UEAxMTa3ViZWNvbmNo
+            #   aW5hMjAyMy5pbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKYDxplf
+            #   P4P+9AU0MaciXPW05jTRTAcIyUIuziarbKuJS7Y3ytcxTxwAgC9Zq8IWqp6pRR5e
+            #   HDkr6yhcuJYu1XWxPXS8vEWrqCPn27Fti8abfuQ1zgAlxTcEbJv9enfIRrw4FRY+
+            #   +PX3ZlY29/XuuNrlxQ4Gi23+zChDtaqxOCcZTjGLiH7IpJ4jsFNS0M4XOxjmX/vN
+            #   eSSmTMLIFT4+cgkPCz+N3JupVLADIczsw7lXdsKB2yU4OfRlnIPQEeDO2OKlO78H
+            #   6FaLuvDZ67CJRN1yqzXjSgfuPyheiB3bpZbRTRdETZdWPRpaDBq+I34PPBGrWyq8
+            #   6T4MhOD+6gykhYkCAwEAAaMnMCUwDgYDVR0PAQH/BAQDAgeAMBMGA1UdJQQMMAoG
+            #   CCsGAQUFBwMDMA0GCSqGSIb3DQEBCwUAA4IBAQCkSt4HcfvhxMgoRqw1s5rbM6c7
+            #   ZrFp8mjK84o+7MbyFgTv7xr2mBjgq5Fv5C/+JsSWYsf5kA8A2ovZuCp4U9VJ+rwK
+            #   6A2W86CTXwGHGmcggvaJHiS9l2GdZcqDFwFkduOL+9ZUBcDMWrKMJ4TB0S3Q71y7
+            #   fORqYPlw/VFsk50oaiqHD29DPGixyqsYqvxSZO2S38cVvvvCnczhNIlC6wcY0wB3
+            #   6uEu5iOL1NbVz/5X7UmlusP2dhXRiWsPad7mF8x1tTaqilqn/H+/m2JtdY92hBCt
+            #   scBWy9+ibz9T2VjkxO/n70pjrZEzBDvltsvQPDamEG8Uryl7HE4ufCEZuF/K
+            #   -----END CERTIFICATE-----
       mutateDigest: true
       required: true
       verifyDigest: true
