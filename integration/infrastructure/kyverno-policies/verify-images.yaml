@@ -38,12 +38,12 @@ spec:
               ir+zzBKLSIf4mfn227tBPbowOjjVecV5WEzKItUYLvHtk3kWP+dMeQY/AuIo/yhvvCTA2e4OKDyZ
               sR7TpO9qCHsFGcv4S+iYT6quz/6S+0VRkOPUc/7bm/9OAws1
               -----END CERTIFICATE-----
-       # invalid cert
-            cert: |-
-              -----BEGIN PUBLIC KEY-----
-              MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8nXRh950IZbRj8Ra/N9sbqOPZrfM
-              5/KAQN0/KjHcorm/J5yctVd7iEcnessRQjU917hmKO6JWVGHpDguIyakZA==
-              -----END PUBLIC KEY-----
+            # # invalid cert
+            # cert: |-
+            #   -----BEGIN PUBLIC KEY-----
+            #   MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8nXRh950IZbRj8Ra/N9sbqOPZrfM
+            #   5/KAQN0/KjHcorm/J5yctVd7iEcnessRQjU917hmKO6JWVGHpDguIyakZA==
+            #   -----END PUBLIC KEY-----
       mutateDigest: true
       required: true
       verifyDigest: true
